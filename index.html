@@ -140,7 +140,7 @@
             loading.style.display = 'block';
 
             // Send POST request to API
-            fetch('https://ygauravyy-nanee-animation1.hf.space/animate', {
+            fetch('https://ygauravyy-nanee-animation2.hf.space/animate', {
                 method: 'POST',
                 body: formData
             })
@@ -154,7 +154,7 @@
             .then(data => {
                 if (data.gif_url) {
                     // Construct full URL for the GIF
-                    const gifUrl = `https://ygauravyy-nanee-animation.hf.space${data.gif_url}`;
+                    const gifUrl = `https://ygauravyy-nanee-animation2.hf.space${data.gif_url}`;
                     gifResult.src = gifUrl;
                     gifResult.style.display = 'block';
                 } else {
